@@ -1,45 +1,4 @@
-body {
-  position: relative;
-  margin: 0;
-
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #444;
-
-  background-color: #fff;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  -webkit-clip-path: inset(100%);
-
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+@import "global.scss";
 @import "blocks/button.scss";
 @import "blocks/header.scss";
 @import "blocks/main-nav.scss";
@@ -52,6 +11,9 @@ input[type='radio'].visually-hidden {
 @import "blocks/reviews.scss";
 @import "blocks/contacts.scss";
 @import "blocks/map.scss";
+@import "blocks/inner.scss";
+@import "blocks/product-list.scss";
+@import "blocks/production.scss";
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/development.scss";
