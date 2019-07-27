@@ -14,3 +14,14 @@
   font-weight: 700;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 50%;
+  }
+}
