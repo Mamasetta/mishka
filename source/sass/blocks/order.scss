@@ -34,3 +34,41 @@
   font-size: 14px;
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .order__fieldset {
+    display: flex;
+  }
+
+  .order__title {
+    margin: 0;
+  }
+
+  .order__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &--color {
+      flex-direction: row;
+    }
+
+    &--submit {
+      flex-direction: row;
+    }
+  }
+
+  .order__checkbox-wrapper {
+    width: 50%;
+  }
+
+  .order__note {
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__checkbox-wrapper {
+    width: 30%;
+  }
+}
