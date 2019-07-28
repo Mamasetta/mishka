@@ -29,6 +29,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .reviews__title {
+    order: 0;
+    width: 50%;
+  }
+
+  .reviews__list {
+    order: 2;
+    width: 100%;
+  }
+
   .reviews__switches {
     position: absolute;
     bottom: 0;
@@ -36,8 +52,6 @@
   }
 
   .reviews__button {
-    position: absolute;
-    top: 0;
-    right: 0;
+    order: 1;
   }
 }

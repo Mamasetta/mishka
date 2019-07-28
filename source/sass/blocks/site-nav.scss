@@ -1,4 +1,4 @@
-.main-nav {
+.site-nav {
   list-style: none;
   margin: 0;
 
@@ -8,23 +8,23 @@
   color: #000000;
 }
 
-.main-nav__item {
+.site-nav__item {
   list-style: none;
 }
 
-.main-nav__link {
+.site-nav__link {
   color: #000000;
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
+  .site-nav {
     display: flex;
-    order: 2;
+    order: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
-    order: 0;
+  .site-nav {
+    order: 2;
   }
 }

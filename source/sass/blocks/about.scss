@@ -23,5 +23,29 @@
 
   .about__item {
     width: 50%;
+
+    &--materials {
+      order: 0;
+    }
+
+    &--handmade {
+      order: 1;
+    }
+
+    &--style {
+      order: 2;
+    }
+
+    &--support {
+      order: 3;
+    }
+
+    &--likes {
+      order: 4;
+    }
+
+    &--packaging {
+      order: 5;
+    }
   }
 }

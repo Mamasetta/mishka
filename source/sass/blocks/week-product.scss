@@ -45,10 +45,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .week-product__sub-title {
-    position: absolute;
-    top: 0;
-    right: 0;
+  .week-product__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 
   .week-product__description {
@@ -75,11 +74,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .week-product {
-    padding-left: 225px;
-  }
-
-  .week-product__sub-title {
-    left: 0;
+  .week-product__wrapper {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 }
