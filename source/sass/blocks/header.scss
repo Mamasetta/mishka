@@ -1,5 +1,55 @@
 .header {
+  position: relative;
   padding: 30px 20px;
 
+  text-align: center;
+
   background-color: #ffffff;
+}
+
+.header__toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid #000000;
+}
+
+.header__info {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header__logo {
+    order: 0;
+    width: 50%;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__info {
+    display: block;
+    order: 3;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo {
+    order: 1;
+    width: 30%;
+  }
+
+  .header__info {
+    order: 4;
+  }
 }

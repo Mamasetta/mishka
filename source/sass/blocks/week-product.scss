@@ -1,3 +1,9 @@
+.week-product {
+  position: relative;
+
+  padding: 30px;
+}
+
 .week-product__title {
   font-size: 25px;
   font-weight: 700;
@@ -17,11 +23,59 @@
 }
 
 .week-product__characteristic {
+  display: flex;
+  flex-wrap: wrap;
   line-height: 20px;
+}
+
+.week-product__characteristic-parametr {
+  width: 50%;
+}
+
+.week-product__characteristic-value {
+  margin: 0;
+  width: 50%;
 }
 
 .week-product__price {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .week-product__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .week-product__description {
+    width: 50%;
+  }
+
+  .week-product__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .week-product__characteristic {
+    width: 50%;
+  }
+
+  .week-product__price {
+    width: 50%;
+  }
+
+  .week-product__button {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-product__wrapper {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
 }

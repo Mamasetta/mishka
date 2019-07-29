@@ -15,26 +15,40 @@
         <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров для дома ручной работы Mishka">
       </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link"  href="catalog.html">Каталог товаров</a>
-          </li>
+      <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
+      <ul class="main-nav">
+        <li class="main-nav__item">
+          <a class="main-nav__link"  href="catalog.html">Каталог товаров</a>
+        </li>
 
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Поиск по сайту</a>
-          </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
 
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Поиск по сайту</a>
+        </li>
+
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+
+      <ul class="info-nav">
+        <li class="info-nav__item">
+          <a class="info-nav__link" href="#">Новые поступления</a>
+        </li>
+
+        <li class="info-nav__item">
+          <a class="info-nav__link" href="#">Распродажа</a>
+        </li>
+      </ul>
+
+      <p class="header__info">Бесплатная доставка по России</p>
+
     </header>
 
     <main class="main">
@@ -50,8 +64,11 @@
       </ul>
 
       <section class="week-product">
-        <h2 class="week-product__title">Вязаные корзинки</h2>
-        <b class="week-product__sub-title">Товар недели</b>
+        <div class="week-product__wrapper">
+          <h2 class="week-product__title">Вязаные корзинки</h2>
+          <b class="week-product__sub-title">Товар недели</b>
+        </div>
+
         <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести pасцветках и трех размерах.</p>
 
         <dl class="week-product__characteristic">
@@ -97,12 +114,12 @@
       <section class="about">
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
-          <li class="about__item">Экологически чистые материалы</li>
-          <li class="about__item">Скандинавский стиль по российской цене</li>
-          <li class="about__item">Увеличивает лайки на фотографиях</li>
-          <li class="about__item">Связано вручную с любовью и умилением</li>
-          <li class="about__item">Поддержка отечественного производителя</li>
-          <li class="about__item">Поставляется в подарочной упаковке</li>
+          <li class="about__item about__item--materials">Экологически чистые материалы</li>
+          <li class="about__item about__item--style">Скандинавский стиль по российской цене</li>
+          <li class="about__item about__item--likes">Увеличивает лайки на фотографиях</li>
+          <li class="about__item about__item--handmade">Связано вручную с любовью и умилением</li>
+          <li class="about__item about__item--support">Поддержка отечественного производителя</li>
+          <li class="about__item about__item--packaging">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
 
@@ -119,27 +136,34 @@
           <a class="reviews__prew" href="#">Предыдущий</a>
           <a class="reviews__next" href="#">Следующий</a>
         </div>
-        <a class="reviews__list button" href="#">Написать</a>
+        <a class="reviews__button button" href="#">Написать</a>
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <dl class="contacts__content">
-          <dt class="contacts__parametr">e-mail:</dt>
-          <dd class="contacts__value">info@mimimishkashop.ru</dd>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <dl class="contacts__content">
+            <dt class="contacts__parametr">e-mail:</dt>
+            <dd class="contacts__value">info@mimimishkashop.ru</dd>
 
-          <dt class="contacts__parametr">адрес:</dt>
-          <dd class="contacts__value">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</dd>
-        </dl>
-      </section>
+            <dt class="contacts__parametr">адрес:</dt>
+            <dd class="contacts__value">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</dd>
+          </dl>
+        </div>
 
-      <section class="map">
-        <img class="map__image" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8, офис 101">
+        <section class="contacts__map map">
+            <img class="map__image" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8, офис 101">
+        </section>
+
+        <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
-      <a class="write-us-button button" href="#">Напишите нам</a>
     </main>
 
     <footer class="footer">
+      <a class="footer__logo" href="#">
+        <img class="footer__logo-image" src="img/logo-footer.svg" alt="Магазин товаров для дома ручной работы Mishka">
+      </a>
+
       <section class="footer__social social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list">

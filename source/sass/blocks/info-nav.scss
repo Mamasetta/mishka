@@ -1,4 +1,5 @@
-.main-nav {
+.info-nav {
+  display: none;
   list-style: none;
   margin: 0;
 
@@ -8,23 +9,17 @@
   color: #000000;
 }
 
-.main-nav__item {
+.info-nav__item {
   list-style: none;
 }
 
-.main-nav__link {
+.info-nav__link {
   color: #000000;
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav {
-    display: flex;
-    order: 2;
-  }
-}
-
 @media (min-width: $desktop-width) {
-  .main-nav {
-    order: 0;
+  .info-nav {
+    display: flex;
+    order: 3;
   }
 }

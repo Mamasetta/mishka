@@ -1,3 +1,7 @@
+.reviews {
+  position: relative;
+}
+
 .reviews__title {
   font-size: 25px;
   font-weight: 700;
@@ -18,4 +22,36 @@
 .reviews__author-link {
   font-size: 17px;
   color: #444444;
+}
+
+.reviews__switches {
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .reviews__title {
+    order: 0;
+    width: 50%;
+  }
+
+  .reviews__list {
+    order: 2;
+    width: 100%;
+  }
+
+  .reviews__switches {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .reviews__button {
+    order: 1;
+  }
 }

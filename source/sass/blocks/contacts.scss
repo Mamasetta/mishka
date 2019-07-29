@@ -1,5 +1,43 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__title {
   font-size: 17px;
   font-weight: 700;
   color: #000000;
 }
+
+.contacts__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts__parametr {
+  width: 30%;
+}
+
+.contacts__value {
+  margin: 0;
+  width: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__content {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+  }
+
+  .contacts__button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+

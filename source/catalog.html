@@ -15,26 +15,39 @@
         <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров для дома ручной работы Mishka">
       </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link">Каталог товаров</a>
-          </li>
+      <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
+      <ul class="main-nav">
+        <li class="main-nav__item">
+          <a class="main-nav__link">Каталог товаров</a>
+        </li>
 
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Поиск по сайту</a>
-          </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
 
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Поиск по сайту</a>
+        </li>
+
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+
+      <ul class="info-nav">
+        <li class="info-nav__item">
+          <a class="info-nav__link" href="#">Новые поступления</a>
+        </li>
+
+        <li class="info-nav__item">
+          <a class="info-nav__link" href="#">Распродажа</a>
+        </li>
+      </ul>
+
+      <p class="header__info">Бесплатная доставка по России</p>
     </header>
 
     <main class="inner">
@@ -44,42 +57,51 @@
           <a class="product-list__link" href="#">
             <img class="product-list__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
           </a>
-          <a class="product-list__link" href="#">
-            <h2 class="product-list__title">Зайчик-попрыгайчик</h2>
-          </a>
-          <p class="product-list__description">Рост 30 см, вес 200 г</p>
-          <p class="product-list__price">
-              1 200 руб.
-            <button class="product-list__basket-button" type="button">Заказать</button>
-          </p>
+
+          <div class="product-list__wrapper">
+            <a class="product-list__link" href="#">
+              <h2 class="product-list__title">Зайчик-попрыгайчик</h2>
+            </a>
+            <p class="product-list__description">Рост 30 см, вес 200 г</p>
+            <p class="product-list__price">
+                1 200 руб.
+              <button class="product-list__basket-button" type="button">Заказать</button>
+            </p>
+          </div>
         </li>
 
         <li class="product-list__item">
           <a class="product-list__link" href="#">
             <img class="product-list__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
           </a>
-          <a class="product-list__link" href="#">
-            <h2 class="product-list__title">Корзинка для белья</h2>
-          </a>
-          <p class="product-list__description">Диаметр 15 см, высота 10 см</p>
-          <p class="product-list__price">
-              690 руб.
-            <button class="product-list__basket-button" type="button">Заказать</button>
-          </p>
+
+          <div class="product-list__wrapper">
+            <a class="product-list__link" href="#">
+              <h2 class="product-list__title">Корзинка для белья</h2>
+            </a>
+            <p class="product-list__description">Диаметр 15 см, высота 10 см</p>
+            <p class="product-list__price">
+                690 руб.
+              <button class="product-list__basket-button" type="button">Заказать</button>
+            </p>
+          </div>
         </li>
 
         <li class="product-list__item">
           <a class="product-list__link" href="#">
             <img class="product-list__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
           </a>
-          <a class="product-list__link" href="#">
-            <h2 class="product-list__title">Большая корзинка для игрушек</h2>
-          </a>
-          <p class="product-list__description">Диаметр 30 см, высота 30 см</p>
-          <p class="product-list__price">
-              1 500 руб.
-            <button class="product-list__basket-button" type="button">Заказать</button>
-          </p>
+
+          <div class="product-list__wrapper">
+            <a class="product-list__link" href="#">
+              <h2 class="product-list__title">Большая корзинка для игрушек</h2>
+            </a>
+            <p class="product-list__description">Диаметр 30 см, высота 30 см</p>
+            <p class="product-list__price">
+                1 500 руб.
+              <button class="product-list__basket-button" type="button">Заказать</button>
+            </p>
+          </div>
         </li>
       </ul>
 
@@ -118,6 +140,10 @@
     </main>
 
     <footer class="footer">
+      <a class="footer__logo" href="index.html">
+          <img class="footer__logo-image" src="img/logo-footer.svg" alt="Магазин товаров для дома ручной работы Mishka">
+      </a>
+
       <section class="footer__social social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list">
