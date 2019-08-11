@@ -11,11 +11,14 @@
   <body>
 
     <header class="header">
-      <a class="header__logo">
-        <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров для дома ручной работы Mishka">
-      </a>
+      <div class="header__wrapper">
+        <a class="header__logo">
+          <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров для дома ру
+          чной работы Mishka">
+        </a>
 
-      <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
 
       <ul class="main-nav">
         <li class="main-nav__item">
@@ -29,11 +32,11 @@
 
       <ul class="site-nav">
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#">Поиск по сайту</a>
+          <a class="site-nav__link site-nav__link--search" href="#">Поиск по сайту</a>
         </li>
 
         <li class="site-nav__item">
-          <a class="site-nav__link" href="#">Корзина: пока пуста</a>
+          <a class="site-nav__link site-nav__link--busket" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
 
@@ -48,20 +51,25 @@
       </ul>
 
       <p class="header__info">Бесплатная доставка по России</p>
-
     </header>
 
     <main class="main">
-      <h1 class="main__title">Милые штуки ручной работы для дома</h1>
-      <ul class="main__categories categories">
-        <li class="categories__item">
-          <a class="categories__link categories__link--light" href="#">Предметы интерьера</a>
-        </li>
+      <div class="main__wrapper">
 
-        <li class="categories__item">
-          <a class="categories__link  categories__link--dark" href="#">Детские игрушки</a>
-        </li>
-      </ul>
+        <div class="main__title-wrapper">
+          <h1 class="main__title">Милые штуки ручной работы для дома</h1>
+        </div>
+
+        <ul class="main__categories categories">
+          <li class="categories__item">
+            <a class="categories__link categories__link--light" href="#">Предметы интерьера</a>
+          </li>
+
+          <li class="categories__item">
+            <a class="categories__link  categories__link--dark" href="#">Детские игрушки</a>
+          </li>
+        </ul>
+      </div>
 
       <section class="week-product">
         <div class="week-product__wrapper">
@@ -72,14 +80,20 @@
         <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести pасцветках и трех размерах.</p>
 
         <dl class="week-product__characteristic">
-          <dt class="week-product__characteristic-parametr">Цвет:</dt>
-          <dd class="week-product__characteristic-value">«Тиффани»/серый</dd>
+          <div class="week-product__characteristic-wrapper">
+            <dt class="week-product__characteristic-parametr">Цвет:</dt>
+            <dd class="week-product__characteristic-value">«Тиффани»/серый</dd>
+          </div>
 
-          <dt class="week-product__characteristic-parametr">Диаметр:</dt>
-          <dd class="week-product__characteristic-value">25 см</dd>
+          <div class="week-product__characteristic-wrapper">
+            <dt class="week-product__characteristic-parametr">Диаметр:</dt>
+            <dd class="week-product__characteristic-value">25 см</dd>
+          </div>
 
-          <dt class="week-product__characteristic-parametr">Высота:</dt>
-          <dd class="week-product__characteristic-value">15 см</dd>
+          <div class="week-product__characteristic-wrapper">
+            <dt class="week-product__characteristic-parametr">Высота:</dt>
+            <dd class="week-product__characteristic-value">15 см</dd>
+          </div>
         </dl>
 
         <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели: вязаные корзинки">
@@ -133,8 +147,8 @@
           </li>
         </ul>
         <div class="reviews__switches">
-          <a class="reviews__prew" href="#">Предыдущий</a>
-          <a class="reviews__next" href="#">Следующий</a>
+          <a class="reviews__switches-link reviews__prew" href="#"><span class="visually-hidden">Предыдущий</span></a>
+          <a class="reviews__switches-link reviews__next" href="#"><span class="visually-hidden">Следующий</span></a>
         </div>
         <a class="reviews__button button" href="#">Написать</a>
       </section>
@@ -168,23 +182,24 @@
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Instagram</a>
+            <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Instagram</span></a>
           </li>
 
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Facebook</a>
+            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a>
           </li>
 
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Twitter</a>
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a>
           </li>
         </ul>
       </section>
 
       <p class="footer__development development">
           Разработано
-        <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">HTML-academy</a>
+        <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML-academy</span></a>
       </p>
     </footer>
+    <div class="busket-modal__wrapper"></div>
   </body>
 </html>

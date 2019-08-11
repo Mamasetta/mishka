@@ -1,6 +1,7 @@
 .main-nav {
   list-style: none;
   margin: 0;
+  padding: 0;
 
   font-size: 17px;
   line-height: 24px;
@@ -13,7 +14,22 @@
 }
 
 .main-nav__link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 76px;
+  padding-right: 60px;
+
   color: #000000;
+  box-shadow: 0px 1px 0 0 #ececec, inset 0px 1px 0 0 #ececec;
+}
+
+.js-main-nav {
+  display: none;
+}
+
+.js-main-nav--open {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
