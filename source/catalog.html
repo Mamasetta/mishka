@@ -68,7 +68,7 @@
             <p class="product-list__description">Рост 30 см, вес 200 г</p>
             <p class="product-list__price">
                 1 200 руб.
-              <button class="product-list__basket-button" type="button">Заказать</button>
+              <button class="product-list__basket-button" type="button"><span class="visually-hidden">Заказать</span></button>
             </p>
           </div>
         </li>
@@ -85,7 +85,7 @@
             <p class="product-list__description">Диаметр 15 см, высота 10 см</p>
             <p class="product-list__price">
                 690 руб.
-              <button class="product-list__basket-button" type="button">Заказать</button>
+              <button class="product-list__basket-button" type="button"><span class="visually-hidden">Заказать</span></button>
             </p>
           </div>
         </li>
@@ -102,44 +102,44 @@
             <p class="product-list__description">Диаметр 30 см, высота 30 см</p>
             <p class="product-list__price">
                 1 500 руб.
-              <button class="product-list__basket-button" type="button">Заказать</button>
+              <button class="product-list__basket-button" type="button"><span class="visually-hidden">Заказать</span></button>
             </p>
           </div>
         </li>
       </ul>
 
       <section class="busket-modal">
-          <h3 class="busket-modal__title">Добавить в корзину</h3>
-          <form class="busket-modal__form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="busket-modal__fieldset">
-              <legend class="busket-modal__title">Выберите размер:</legend>
-              <div class="busket-modal__radio-wrapper">
-                <input class="busket-modal__radio visually-hidden" type="radio" name="size" id="small-id" checked>
-                <label class="busket-modal__label" for="small-id">S</label>
-              </div>
+        <h3 class="busket-modal__title">Добавить в корзину</h3>
+        <form class="busket-modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="busket-modal__fieldset">
+            <legend class="busket-modal__title">Выберите размер:</legend>
+            <div class="busket-modal__radio-wrapper">
+              <input class="busket-modal__radio visually-hidden" type="radio" name="size" id="small-id" checked>
+              <label class="busket-modal__label" for="small-id">S</label>
+            </div>
 
-              <div class="busket-modal__radio-wrapper">
-                <input class="busket-modal__radio visually-hidden" type="radio" name="size" id="medium-id">
-                <label class="busket-modal__label" for="medium-id">M</label>
-              </div>
+            <div class="busket-modal__radio-wrapper">
+              <input class="busket-modal__radio visually-hidden" type="radio" name="size" id="medium-id">
+              <label class="busket-modal__label" for="medium-id">M</label>
+            </div>
 
-              <div class="busket-modal__radio-wrapper">
-                <input class="busket-modal__radio visually-hidden" type="radio" name="size" id="large-id">
-                <label class="busket-modal__label" for="large-id">L</label>
-              </div>
-            </fieldset>
-            <button class="busket-modal__button button" type="submit">Добавить</button>
-          </form>
-        </section>
+            <div class="busket-modal__radio-wrapper">
+              <input class="busket-modal__radio visually-hidden" type="radio" name="size" id="large-id">
+              <label class="busket-modal__label" for="large-id">L</label>
+            </div>
+          </fieldset>
+          <button class="busket-modal__button button" type="submit">Добавить</button>
+        </form>
+      </section>
 
+      <div class="production__wrapper">
         <section class="production">
           <h2 class="production__title">Процесс производства</h2>
-          <div class="production__video-container">
-            <img class="production__preview" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Превью видео процесса производства">
-          </div>
+          <div class="production__preview"></div>
           <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="production__button button" href="#">Сделать заказ</a>
         </section>
+      </div>
     </main>
 
     <footer class="footer">
