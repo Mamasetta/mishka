@@ -8,6 +8,7 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
+  padding-bottom: 1px;
   padding-top: 22px;
   box-sizing: border-box;
 }
@@ -24,10 +25,8 @@
 .header__toggle {
   display: none;
   position: absolute;
-  top: 30px;
   right: 30px;
   width: 20px;
-  height: 20px;
 
   border: none;
   background-color: #ffffff;
@@ -38,11 +37,15 @@
 
 .js-header__toggle--close {
   display: block;
+  top: 29px;
+  height: 20px;
   background-image: url("../../img/icon-menu-close.svg");
 }
 
 .js-header__toggle--open {
   display: block;
+  top: 32px;
+  height: 14px;
   background-image: url("../../img/icon-menu-open.svg");
 }
 
