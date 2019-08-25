@@ -7,10 +7,10 @@
   left: 0;
   z-index: 20;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 30px;
   padding-bottom: 45px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 31px;
+  padding-right: 27px;
 
   background-color: #ffffff;
   box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
@@ -31,7 +31,7 @@
 
 .busket-modal__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
   padding: 0;
 
   font-size: 25px;
@@ -42,6 +42,7 @@
 }
 
 .busket-modal__sub-title {
+  margin-bottom: 24px;
   text-align: center;
 }
 
@@ -80,12 +81,17 @@
   text-transform: uppercase;
 
   border: solid 2px rgba($color: #444444, $alpha: 0.1);
+  cursor: pointer;
+}
+
+.busket-modal__radio:checked ~ .busket-modal__label {
+  border: solid 2px #63d1bb;
 }
 
 .busket-modal__button {
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 16px;
   padding-left: 82px;
   padding-right: 82px;
 
