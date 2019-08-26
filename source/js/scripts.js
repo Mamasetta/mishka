@@ -30,16 +30,19 @@ menuButton.addEventListener("click", function (){
   menuIsOpen ?  closeMenu() : openMenu();
 });
 
-var indexBusket = document.querySelector(".week-product__button");
+
+var openModal = document.querySelectorAll(".js-open__busket-modal");
 var busketModal = document.querySelector(".busket-modal");
 var busketWrapper = document.querySelector(".busket-modal__wrapper");
 
-indexBusket.addEventListener("click", function(event) {
-  event.preventDefault();
-  busketModal.classList.remove("js-hidden");
-  busketWrapper.classList.remove("js-hidden");
-  busketModal.classList.add("js-show");
-  busketWrapper.classList.add("js-show");
+openModal.forEach(function(openModal) {
+  openModal.addEventListener("click", function(event) {
+    event.preventDefault();
+    busketModal.classList.remove("js-hidden");
+    busketWrapper.classList.remove("js-hidden");
+    busketModal.classList.add("js-show");
+    busketWrapper.classList.add("js-show");
+  });
 });
 
 busketWrapper.addEventListener("click", function(event) {
