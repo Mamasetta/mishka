@@ -83,6 +83,15 @@
 
   border: solid 2px rgba($color: #444444, $alpha: 0.1);
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: solid 2px rgba($color: #444444, $alpha: 0.3);
+  }
+
+  &:active {
+    border: solid 2px #62d1ba;
+  }
 }
 
 .busket-modal__radio:checked ~ .busket-modal__label {
