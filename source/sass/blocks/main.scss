@@ -26,7 +26,24 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main {
+    margin-top: -44px;
+  }
+
+  .main__title-wrapper {
+    width: 768px;
+    padding-top: 153px;
+    padding-bottom: 374px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
   .main__title {
-    height: 746px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .main__title br {
+    display: none;
   }
 }

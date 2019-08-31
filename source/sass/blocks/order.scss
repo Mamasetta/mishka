@@ -173,6 +173,11 @@
   border: solid 2px rgba($color: #444444, $alpha: 0.3);
 }
 
+.order__radio:focus ~ .order__label--radio::before,
+.order__checkbox:focus ~ .order__label--checkbox::before {
+  outline: 1px solid #62d1ba;
+}
+
 .order__checkbox:checked ~ .order__label--checkbox::after {
   display: block;
 }
@@ -226,10 +231,10 @@
   height: 33px;
 }
 
-.order__input:hover .order__image,
-.order__input:focus .order__image,
-.order__input:active .order__image {
-  fill: #62d1ba;
+.order__input:hover ~ svg,
+.order__input:focus ~ svg {
+  color: #62d1ba;
+  opacity: 1;
 }
 
 .order__textarea {

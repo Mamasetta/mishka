@@ -98,6 +98,10 @@
   border: solid 2px #63d1bb;
 }
 
+.busket-modal__radio:focus ~ .busket-modal__label {
+  outline: 1px solid #62d1ba;
+}
+
 .busket-modal__button {
   width: 100%;
   padding-top: 17px;

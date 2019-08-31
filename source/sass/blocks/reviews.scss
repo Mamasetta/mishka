@@ -2,6 +2,7 @@
   position: relative;
   width: 320px;
   box-sizing: border-box;
+  margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 53px;
   padding-left: 30px;
@@ -103,25 +104,59 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 768px;
+    padding-top: 79px;
+    padding-bottom: 102px;
+    padding-left: 46px;
+    padding-right: 50px;
   }
 
   .reviews__title {
     order: 0;
-    width: 50%;
+    width: 384px;
+    margin-bottom: 46px;
+
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .reviews__list {
     order: 2;
     width: 100%;
+    padding-left: 4px;
+  }
+
+  .reviews__text {
+    margin-bottom: 58px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .reviews__author {
+    margin-bottom: 4px;
+    font-size: 18px;
   }
 
   .reviews__switches {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    width: 170px;
+    bottom: 97px;
+    right: 53px;
+  }
+
+  .reviews__switches-link {
+    width: 85px;
+    padding: 0;
+    border: none;
   }
 
   .reviews__button {
     order: 1;
+    width: 175px;
+    height: 52px;
+    box-sizing: border-box;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }

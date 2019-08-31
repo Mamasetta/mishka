@@ -1,4 +1,7 @@
 .about {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 30px;
@@ -101,16 +104,40 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about {
+    width: 768px;
+    padding-top: 52px;
+    padding-bottom: 83px;
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+
+  .about__title {
+    margin-bottom: 103px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   .about__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 2px;
   }
 
   .about__item {
-    width: 50%;
+    width: 337px;
+    box-sizing: border-box;
+    margin-bottom: 111px;
+    padding-right: 44px;
+
+    font-size: 20px;
+    line-height: 22px;
 
     &--materials {
       order: 0;
+      padding-right: 105px;
     }
 
     &--handmade {
@@ -119,6 +146,7 @@
 
     &--style {
       order: 2;
+      padding-right: 73px;
     }
 
     &--support {
@@ -127,6 +155,8 @@
 
     &--likes {
       order: 4;
+      margin-bottom: 0;
+      padding-right: 95px;
     }
 
     &--packaging {

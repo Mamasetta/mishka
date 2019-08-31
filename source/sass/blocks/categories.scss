@@ -81,5 +81,34 @@
 @media (min-width: $tablet-width) {
   .categories {
     display: flex;
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .categories__item {
+    width: 50%;
+  }
+
+  .categories__link {
+    width: 50%;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 29px;
+    padding-left: 35px;
+    padding-right: 132px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .categories__link--light::before {
+    top: 29px;
+    right: 36px;
+  }
+
+  .categories__link--dark::before {
+    top: 31px;
+    right: 34px;
   }
 }

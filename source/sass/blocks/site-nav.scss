@@ -81,6 +81,33 @@
   .site-nav {
     display: flex;
     order: 1;
+    width: 398px;
+  }
+
+  .site-nav__link {
+    padding-top: 32px;
+    padding-bottom: 33px;
+    padding-left: 83px;
+    padding-right: 51px;
+  }
+
+  .site-nav__link--search {
+    font-size: 0;
+    padding-top: 32px;
+    padding-bottom: 33px;
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
+  .site-nav__icon--search {
+    top: 52%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+  }
+
+  .site-nav__icon--busket {
+    top: 36px;
+    left: 33px;
   }
 }
 

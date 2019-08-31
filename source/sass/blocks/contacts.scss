@@ -91,8 +91,66 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    width: 768px;
+    padding-top: 46px;
+    padding-bottom: 57px;
+  }
+
+  .contacts__wrapper {
+    position: relative;
+    margin-bottom: 57px;
+    padding-left: 46px;
+
+    &::before {
+      content: ("");
+      position: absolute;
+      top: -15px;
+      right: 54px;
+      width: 47px;
+      height: 81px;
+
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../../img/icon-flag.svg");
+    }
+  }
+
+  .contacts__title {
+    margin-top: 15px;
+    margin-bottom: 48px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   .contacts__content {
     flex-wrap: nowrap;
+    padding-left: 4px;
+    padding-right: 55px;
+
+    font-size: 17px;
+  }
+
+  .contacts__value {
+    margin-right: 51px;
+  }
+
+  .contacts__value--adress {
+    margin-right: 0;
+  }
+
+  .contacts__value--break {
+    display: none;
+  }
+
+  .contacts__map {
+    margin-bottom: 55px;
+  }
+
+  .contacts__button {
+    width: 230px;
   }
 }
 

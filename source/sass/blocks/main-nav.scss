@@ -47,6 +47,25 @@
   .main-nav {
     display: flex;
     order: 2;
+    width: 370px;
+    box-sizing: border-box;
+    padding-left: 49px;
+
+    font-size: 15px;
+
+    background-color: transparent;
+  }
+
+  .main-nav__link {
+    padding: 0;
+    padding-top: 18px;
+    padding-right: 36px;
+
+    box-shadow: none;
+  }
+
+  .main-nav__item:last-child .main-nav__link {
+    padding-right: 0;
   }
 }
 

@@ -57,21 +57,47 @@
   .header {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .header__wrapper {
+    width: 370px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1px;
+    box-sizing: border-box;
+
+    box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
   }
 
   .header__logo {
     order: 0;
-    width: 50%;
+    width: 112px;
+    height: 46px;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    margin-left: 51px;
   }
 
-  .header__toggle {
+  .header__toggle,
+  .js-header__toggle--close,
+  .js-header__toggle--open {
     display: none;
   }
 
   .header__info {
     display: block;
     order: 3;
-    width: 50%;
+    width: 398px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-right: 50px;
+
+    text-align: right;
+
+    background-color: transparent;
   }
 }
 
