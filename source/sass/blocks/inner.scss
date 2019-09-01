@@ -24,3 +24,17 @@
     line-height: 50px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .inner {
+    margin-top: -45px;
+    box-shadow: 0 -1px 0 0 #ececec, inset 0 -1px 0 0 #ececec;
+  }
+
+  .inner__title {
+    padding-top: 93px;
+    padding-bottom: 102px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

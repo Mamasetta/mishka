@@ -164,6 +164,51 @@
 
 @media (min-width: $desktop-width) {
   .production {
-    flex-direction: row;
+    align-items: flex-end;
+    position: relative;
+    padding-bottom: 59px;
+  }
+
+  .production__wrapper {
+    width: 1150px;
+    padding-bottom: 106px;
+  }
+
+  .production__title {
+    width: 367px;
+    box-sizing: border-box;
+    margin-top: 95px;
+    padding-left: 79px;
+    padding-right: 49px;
+
+    &::before {
+      left: 80px;
+      top: -54px;
+    }
+  }
+
+  .production__preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 682px;
+    height: 455px;
+  }
+
+  .production__description {
+    width: 367px;
+    box-sizing: border-box;
+    padding-top: 9px;
+    padding-bottom: 46px;
+    padding-left: 79px;
+  }
+
+  .production__button {
+    margin-left: 0;
+    margin-right: 57px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-left: 42px;
+    padding-right: 44px;
   }
 }
