@@ -116,10 +116,49 @@
   .production {
     display: flex;
     flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+
+  .production__wrapper {
+    width: 768px;
+    padding-bottom: 63px;
+    padding-left: 51px;
+    padding-right: 49px;
+  }
+
+  .production__title {
+    margin-top: 39px;
+    padding-left: 105px;
+
+    font-size: 20px;
+
+    &::before {
+      left: 41px;
+      top: -5px;
+      height: 32px;
+    }
   }
 
   .production__preview {
     order: -1;
+    width: 667px;
+    height: 454px;
+  }
+
+  .production__description {
+    padding-top: 8px;
+    padding-bottom: 35px;
+    padding-left: 39px;
+    padding-right: 35px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .production__button {
+    margin-left: 41px;
+    margin-right: 41px;
   }
 }
 

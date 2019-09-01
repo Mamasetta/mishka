@@ -10,3 +10,17 @@
 
   background-color: #f1f1f1;
 }
+
+@media (min-width: $tablet-width) {
+  .inner {
+    margin-top: -44px;
+  }
+
+  .inner__title {
+    padding-top: 95px;
+    padding-bottom: 78px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
