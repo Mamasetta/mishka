@@ -91,7 +91,7 @@
   }
 
   .categories__link {
-    width: 50%;
+    box-sizing: border-box;
     margin: 0;
     padding-top: 27px;
     padding-bottom: 29px;
@@ -110,5 +110,18 @@
   .categories__link--dark::before {
     top: 31px;
     right: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    width: 1150px;
+    padding-left: 51px;
+    padding-right: 49px;
+  }
+
+  .categories__link {
+    padding-left: 37px;
+    padding-right: 304px;
   }
 }

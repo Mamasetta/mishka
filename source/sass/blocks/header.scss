@@ -58,9 +58,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 768px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    box-shadow: none;
   }
 
   .header__wrapper {
+    order: 0;
     width: 370px;
     margin: 0;
     padding: 0;
@@ -71,7 +77,6 @@
   }
 
   .header__logo {
-    order: 0;
     width: 112px;
     height: 46px;
     margin-top: 22px;
@@ -102,9 +107,22 @@
 }
 
 @media (min-width: $desktop-width) {
-  .header__logo {
+  .header {
+    width: 1200px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .header__wrapper {
     order: 1;
-    width: 30%;
+    width: 278px;
+  }
+
+  .header__logo {
+    width: 149px;
+    height: 72px;
+    margin: 0 auto;
+    margin-top: 9px;
   }
 
   .header__info {

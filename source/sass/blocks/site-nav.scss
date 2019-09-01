@@ -88,7 +88,9 @@
     padding-top: 32px;
     padding-bottom: 33px;
     padding-left: 83px;
-    padding-right: 51px;
+    padding-right: 49px;
+
+    border-left: solid 1px #ececec;
   }
 
   .site-nav__link--search {
@@ -114,5 +116,7 @@
 @media (min-width: $desktop-width) {
   .site-nav {
     order: 2;
+    width: 400px;
+    padding: 0;
   }
 }

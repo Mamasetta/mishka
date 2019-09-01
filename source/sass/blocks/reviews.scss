@@ -160,3 +160,43 @@
     padding-bottom: 14px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 1150px;
+    padding-top: 70px;
+    padding-bottom: 157px;
+    padding-left: 51px;
+    padding-right: 49px;
+  }
+
+  .reviews__title {
+    margin-bottom: 49px;
+    margin-left: 172px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__list {
+    padding-left: 175px;
+    padding-right: 20px;
+  }
+
+  .reviews__text {
+    margin-bottom: 38px;
+    padding-right: 54px;
+  }
+
+  .reviews__author {
+    font-size: 17px;
+  }
+
+  .reviews__switches {
+    bottom: 152px;
+  }
+
+  .reviews__button {
+    margin-top: 9px;
+  }
+}

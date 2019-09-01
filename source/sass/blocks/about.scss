@@ -164,3 +164,18 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about {
+    width: 1150px;
+    padding-top: 58px;
+    padding-bottom: 90px;
+    padding-left: 223px;
+    padding-right: 238px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

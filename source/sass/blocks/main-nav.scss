@@ -72,5 +72,28 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     order: 0;
+    width: 472px;
+    box-sizing: border-box;
+    padding: 0;
+    box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+  }
+
+  .main-nav__link {
+    width: 236px;
+    box-sizing: border-box;
+    padding-top: 31px;
+    padding-bottom: 33px;
+    padding-left: 34px;
+    padding-right: 35px;
+
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .main-nav__item:first-child .main-nav__link {
+    padding-left: 50px;
+    padding-right: 20px;
+
+    border-right: solid 1px #ececec;
   }
 }

@@ -47,3 +47,26 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main {
+    width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: -44px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .main__title-wrapper {
+    width: 1150px;
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-bottom: 358px;
+  }
+
+  .main__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
