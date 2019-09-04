@@ -1,6 +1,40 @@
 .development {
+  padding: 0;
+  padding-top: 18px;
+  padding-bottom: 27px;
+  margin: 0;
+}
+
+.development__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
+  text-align: center;
   color: #000000;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.development__image {
+  margin-left: 25px;
+  width: 40px;
+  height: 40px;
+}
+
+.development__link:hover path,
+.development__link:focus path {
+  fill: #46c1ae;
+}
+
+@media (min-width: $tablet-width) {
+  .development {
+    padding-top: 53px;
+    padding-bottom: 50px;
+  }
 }

@@ -1,8 +1,40 @@
 .inner__title {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 75px;
+
   font-size: 27px;
   font-weight: 700;
   text-align: center;
   color: #000000;
 
   background-color: #f1f1f1;
+}
+
+@media (min-width: $tablet-width) {
+  .inner {
+    margin-top: -44px;
+  }
+
+  .inner__title {
+    padding-top: 95px;
+    padding-bottom: 78px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner {
+    margin-top: -45px;
+    box-shadow: 0 -1px 0 0 #ececec, inset 0 -1px 0 0 #ececec;
+  }
+
+  .inner__title {
+    padding-top: 93px;
+    padding-bottom: 102px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

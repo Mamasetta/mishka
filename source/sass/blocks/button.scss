@@ -8,4 +8,16 @@
 
   border: solid 2px #444444;
   background-color: #ffffff;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }
