@@ -103,6 +103,8 @@
   .header__info {
     display: block;
     order: 3;
+    position: relative;
+    z-index: 2;
     width: 398px;
     box-sizing: border-box;
     margin: 0;

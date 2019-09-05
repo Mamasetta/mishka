@@ -37,5 +37,7 @@
   .info-nav {
     display: flex;
     order: 3;
+    position: relative;
+    z-index: 2;
   }
 }

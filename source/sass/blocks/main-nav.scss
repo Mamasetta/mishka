@@ -47,6 +47,8 @@
   .main-nav {
     display: flex;
     order: 2;
+    position: relative;
+    z-index: 2;
     width: 370px;
     box-sizing: border-box;
     padding-left: 49px;
