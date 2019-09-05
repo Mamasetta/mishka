@@ -22,6 +22,11 @@
   padding: 0;
 }
 
+.header__logo-image {
+  width: 86px;
+  height: 35px;
+}
+
 .header__toggle {
   display: none;
   position: absolute;
@@ -81,7 +86,12 @@
     height: 46px;
     margin-top: 22px;
     margin-bottom: 20px;
-    margin-left: 51px;
+    margin-left: 48px;
+  }
+
+  .header__logo-image {
+    width: 112px;
+    height: 46px;
   }
 
   .header__toggle,
@@ -123,6 +133,12 @@
     height: 72px;
     margin: 0 auto;
     margin-top: 9px;
+    margin-left: 27px;
+  }
+
+  .header__logo-image {
+    width: 149px;
+    height: 72px;
   }
 
   .header__info {
