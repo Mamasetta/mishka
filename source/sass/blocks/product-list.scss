@@ -111,6 +111,14 @@
     margin-bottom: 53px;
   }
 
+  .product-list__link {
+    display: block;
+  }
+
+  .product-list__picture {
+    display: flex;
+  }
+
   .product-list__image {
     width: 334px;
     height: 324px;
