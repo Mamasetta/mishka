@@ -1,3 +1,7 @@
+.inner__wrapper {
+  background-color: #f1f1f1;
+}
+
 .inner__title {
   margin: 0;
   padding-top: 70px;
@@ -7,13 +11,18 @@
   font-weight: 700;
   text-align: center;
   color: #000000;
-
-  background-color: #f1f1f1;
 }
 
 @media (min-width: $tablet-width) {
   .inner {
     margin-top: -44px;
+  }
+
+  .inner__wrapper {
+    background-repeat: repeat-x;
+    background-size: 100% 24px;
+    background-position: bottom left;
+    background-image: url("../../img/bg-zigzag-fill.svg");
   }
 
   .inner__title {
@@ -29,6 +38,10 @@
   .inner {
     margin-top: -45px;
     box-shadow: 0 -1px 0 0 #ececec, inset 0 -1px 0 0 #ececec;
+  }
+
+  .inner__wrapper {
+    background-size: 100% 34px;
   }
 
   .inner__title {
