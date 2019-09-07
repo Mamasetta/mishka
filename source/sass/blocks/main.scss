@@ -75,10 +75,6 @@
     font-size: 43px;
     line-height: 50px;
   }
-
-  .main__title br {
-    display: none;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -93,7 +89,7 @@
 
     &::before {
       height: 34px;
-      bottom: -20px;
+      bottom: -15px;
     }
   }
 

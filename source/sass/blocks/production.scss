@@ -1,4 +1,4 @@
-.production__wrapper {
+.production {
   width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -7,7 +7,7 @@
   padding-right: 30px;
 }
 
-.production {
+.production__wrapper {
   padding-top: 22px;
   padding-bottom: 32px;
 
@@ -117,14 +117,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .production {
+  .production__wrapper {
     display: flex;
     flex-direction: column;
     padding-top: 0;
     padding-bottom: 45px;
   }
 
-  .production__wrapper {
+  .production {
     width: 768px;
     padding-bottom: 63px;
     padding-left: 51px;
@@ -173,13 +173,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .production {
+  .production__wrapper {
     align-items: flex-end;
     position: relative;
     padding-bottom: 59px;
   }
 
-  .production__wrapper {
+  .production {
     width: 1150px;
     padding-bottom: 106px;
   }
