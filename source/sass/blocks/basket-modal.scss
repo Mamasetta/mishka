@@ -1,4 +1,4 @@
-.busket-modal {
+.basket-modal {
   display: none;
   width: 320px;
   box-sizing: border-box;
@@ -18,19 +18,7 @@
   border: solid 1px #c6c6c6;
 }
 
-.busket-modal__wrapper {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba($color: #ffffff, $alpha: 0.9);
-}
-
-.busket-modal__title {
+.basket-modal__title {
   margin: 0;
   margin-bottom: 12px;
   padding: 0;
@@ -42,12 +30,12 @@
   color: #000000;
 }
 
-.busket-modal__sub-title {
+.basket-modal__sub-title {
   margin-bottom: 24px;
   text-align: center;
 }
 
-.busket-modal__fieldset {
+.basket-modal__fieldset {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
@@ -55,7 +43,7 @@
   border: none;
 }
 
-.busket-modal__radio-wrapper {
+.basket-modal__radio-wrapper {
   display: inline-block;
   margin-right: 2px;
 
@@ -64,7 +52,7 @@
   }
 }
 
-.busket-modal__label {
+.basket-modal__label {
   display: block;
   box-sizing: border-box;
   width: 82px;
@@ -94,15 +82,15 @@
   }
 }
 
-.busket-modal__radio:checked ~ .busket-modal__label {
+.basket-modal__radio:checked ~ .basket-modal__label {
   border: solid 2px #63d1bb;
 }
 
-.busket-modal__radio:focus ~ .busket-modal__label {
+.basket-modal__radio:focus ~ .basket-modal__label {
   outline: 1px solid #62d1ba;
 }
 
-.busket-modal__button {
+.basket-modal__button {
   width: 100%;
   padding-top: 17px;
   padding-bottom: 16px;
@@ -114,4 +102,30 @@
 
   background-color: #63d1bb;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .basket-modal {
+    width: 566px;
+    padding-left: 105px;
+    padding-right: 105px;
+  }
+
+  .basket-modal__title {
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .basket-modal__sub-title {
+    font-size: 17px;
+  }
+
+  .basket-modal__radio-wrapper {
+    margin-right: 9px;
+  }
+
+  .basket-modal__label {
+    width: 112px;
+    height: 52px;
+  }
 }

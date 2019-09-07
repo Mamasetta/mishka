@@ -1,66 +1,33 @@
-var menuButton = document.querySelector(".header__toggle");
-var mainNav = document.querySelector(".main-nav");
-var siteNav = document.querySelector(".site-nav");
-
-var closeMenu = function () {
-  menuButton.classList.remove("js-header__toggle--open");
-  menuButton.classList.add("js-header__toggle--close");
-  mainNav.classList.remove("js-hidden");
-  mainNav.classList.add("js-show");
-  siteNav.classList.remove("js-hidden");
-  siteNav.classList.add("js-show");
-}
-
-var openMenu = function () {
-  menuButton.classList.remove("js-header__toggle--close");
-  menuButton.classList.add("js-header__toggle--open");
-  mainNav.classList.remove("js-show");
-  mainNav.classList.add("js-hidden");
-  siteNav.classList.remove("js-show");
-  siteNav.classList.add("js-hidden");
-}
-
-menuButton.classList.add("js-show");
-menuButton.classList.add("js-header__toggle--open");
-mainNav.classList.add("js-hidden");
-siteNav.classList.add("js-hidden");
-
-menuButton.addEventListener("click", function (){
-  var menuIsOpen = menuButton.classList.contains("js-header__toggle--open");
-  menuIsOpen ?  closeMenu() : openMenu();
-});
-
-
-var openModal = document.querySelectorAll(".js-open__busket-modal");
-var busketModal = document.querySelector(".busket-modal");
-var busketWrapper = document.querySelector(".busket-modal__wrapper");
+var openModal = document.querySelectorAll(".js-open__basket-modal");
+var basketModal = document.querySelector(".basket-modal");
+var basketWrapper = document.querySelector(".basket-modal__wrapper");
 
 openModal.forEach(function(openModal) {
   openModal.addEventListener("click", function(event) {
     event.preventDefault();
-    busketModal.classList.remove("js-hidden");
-    busketWrapper.classList.remove("js-hidden");
-    busketModal.classList.add("js-show");
-    busketWrapper.classList.add("js-show");
+    basketModal.classList.remove("js-hidden");
+    basketWrapper.classList.remove("js-hidden");
+    basketModal.classList.add("js-show");
+    basketWrapper.classList.add("js-show");
   });
 });
 
-busketWrapper.addEventListener("click", function(event) {
+basketWrapper.addEventListener("click", function(event) {
   event.preventDefault();
-  busketModal.classList.remove("js-show");
-  busketWrapper.classList.remove("js-show");
-  busketModal.classList.add("js-hidden");
-  busketWrapper.classList.add("js-hidden");
+  basketModal.classList.remove("js-show");
+  basketWrapper.classList.remove("js-show");
+  basketModal.classList.add("js-hidden");
+  basketWrapper.classList.add("js-hidden");
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (busketModal.classList.contains("js-show") && busketModal.classList.contains("js-show")) {
-      busketModal.classList.remove("js-show");
-      busketWrapper.classList.remove("js-show");
-      busketModal.classList.add("js-hidden");
-      busketWrapper.classList.add("js-hidden");
+    if (basketModal.classList.contains("js-show") && basketModal.classList.contains("js-show")) {
+      basketModal.classList.remove("js-show");
+      basketWrapper.classList.remove("js-show");
+      basketModal.classList.add("js-hidden");
+      basketWrapper.classList.add("js-hidden");
     }
   }
 });

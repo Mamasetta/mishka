@@ -1,4 +1,4 @@
-.footer {
+.footer__wrapper {
   padding-left: 30px;
   padding-right: 30px;
 
@@ -27,7 +27,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer {
+  .footer__wrapper {
     display: flex;
     justify-content: space-between;
     padding-left: 48px;
@@ -43,7 +43,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .footer {
+  .footer__wrapper {
     width: 1150px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -51,7 +51,7 @@
     padding-right: 43px;
   }
 
-  .footer__wrapper {
+  .footer {
     background-color: #f1f1f1;
   }
 }
