@@ -9,3 +9,11 @@
 
   background-color: rgba($color: #ffffff, $alpha: 0.9);
 }
+
+.basket-modal-wrapper__show {
+  display: block;
+}
+
+.basket-modal-wrapper__hidden {
+  display: none;
+}

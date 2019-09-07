@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font">
   </head>
   <body>
 
@@ -68,7 +69,7 @@
     <main class="main">
       <div class="main__wrapper">
         <div class="main__title-wrapper">
-          <h1 class="main__title">Милые штуки<br> ручной<br> работы для дома</h1>
+          <h1 class="main__title">Милые штуки ручной работы&nbsp;для дома</h1>
         </div>
 
         <ul class="main__categories categories">
@@ -113,7 +114,7 @@
           <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Товар недели: вязаные корзинки">
         </picture>
         <p class="week-product__price">Цена: 990 руб.</p>
-        <button class="week-product__button button js-open__basket-modal" type="button">Заказать</button>
+        <button class="week-product__button button button--js" type="button">Заказать</button>
 
         <section class="week-product__modal basket-modal">
           <h3 class="basket-modal__title">Добавить в корзину</h3>

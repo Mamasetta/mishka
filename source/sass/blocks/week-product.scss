@@ -10,7 +10,7 @@
 
   background-image: url("../img/bg-zigzag-line.svg");
   background-position: bottom center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: 320px 10px;
 }
 
@@ -104,8 +104,8 @@
     padding-right: 51px;
 
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: 100% 15px;
-    background-position: bottom left;
+    background-size: 750px 15px;
+    background-position: left bottom;
   }
 
   .week-product__wrapper {
@@ -174,7 +174,9 @@
     padding-bottom: 97px;
     padding-left: 98px;
 
-    background-size: 100% 23px;
+    background-position-x: 50px;
+    background-repeat: no-repeat;
+    background-size: 1050px 23px;
   }
 
   .week-product__wrapper {

@@ -1,33 +1,33 @@
-var openModal = document.querySelectorAll(".js-open__basket-modal");
+var openModal = document.querySelectorAll(".button--js");
 var basketModal = document.querySelector(".basket-modal");
-var basketWrapper = document.querySelector(".basket-modal__wrapper");
+var basketWrapper = document.querySelector(".basket-modal-wrapper");
 
 openModal.forEach(function(openModal) {
   openModal.addEventListener("click", function(event) {
     event.preventDefault();
-    basketModal.classList.remove("js-hidden");
-    basketWrapper.classList.remove("js-hidden");
-    basketModal.classList.add("js-show");
-    basketWrapper.classList.add("js-show");
+    basketModal.classList.remove("basket-modal__hidden");
+    basketWrapper.classList.remove("basket-modal-wrapper__hidden");
+    basketModal.classList.add("basket-modal__show");
+    basketWrapper.classList.add("basket-modal-wrapper__show");
   });
 });
 
 basketWrapper.addEventListener("click", function(event) {
   event.preventDefault();
-  basketModal.classList.remove("js-show");
-  basketWrapper.classList.remove("js-show");
-  basketModal.classList.add("js-hidden");
-  basketWrapper.classList.add("js-hidden");
+  basketModal.classList.remove("basket-modal__show");
+  basketWrapper.classList.remove("basket-modal-wrapper__show");
+  basketModal.classList.add("basket-modal__hidden");
+  basketWrapper.classList.add("basket-modal-wrapper__hidden");
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (basketModal.classList.contains("js-show") && basketModal.classList.contains("js-show")) {
-      basketModal.classList.remove("js-show");
-      basketWrapper.classList.remove("js-show");
-      basketModal.classList.add("js-hidden");
-      basketWrapper.classList.add("js-hidden");
+    if (basketModal.classList.contains("basket-modal__show") && basketModal.classList.contains("basket-modal__show")) {
+      basketModal.classList.remove("basket-modal__show");
+      basketWrapper.classList.remove("basket-modal-wrapper__show");
+      basketModal.classList.add("basket-modal__hidden");
+      basketWrapper.classList.add("basket-modal-wrapper__hidden");
     }
   }
 });

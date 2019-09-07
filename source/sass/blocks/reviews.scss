@@ -10,7 +10,7 @@
 
   background-image: url("../img/bg-zigzag-line.svg");
   background-position: bottom center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: 320px 10px;
 }
 
@@ -111,8 +111,9 @@
     padding-right: 50px;
 
     background-image: url("../img/review@1x.jpg"), url("../img/bg-zigzag-line.svg");
-    background-size: 350px 457px, 100% 15px;
-    background-position: top left, bottom left;
+    background-repeat: no-repeat, repeat-x;
+    background-size: 350px 457px, 750px 15px;
+    background-position: left top, left bottom;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg"), url("../img/bg-zigzag-line.svg");
@@ -177,8 +178,9 @@
     padding-left: 51px;
     padding-right: 49px;
 
-    background-size: 350px 457px, 100% 23px;
-    background-position: 51px top, left bottom;
+    background-size: 350px 457px, 1050px 23px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 51px top, 50px bottom;
   }
 
   .reviews__title {

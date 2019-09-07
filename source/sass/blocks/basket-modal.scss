@@ -45,7 +45,7 @@
 
 .basket-modal__radio-wrapper {
   display: inline-block;
-  margin-right: 2px;
+  margin-right: 6px;
 
   &:last-child {
     margin-right: 0;
@@ -107,16 +107,21 @@
 @media (min-width: $tablet-width) {
   .basket-modal {
     width: 566px;
+    padding-top: 32px;
+    padding-bottom: 47px;
     padding-left: 105px;
     padding-right: 105px;
   }
 
   .basket-modal__title {
+    margin-bottom: 15px;
+
     font-size: 30px;
     line-height: 57px;
   }
 
   .basket-modal__sub-title {
+    margin-bottom: 20px;
     font-size: 17px;
   }
 
@@ -128,4 +133,12 @@
     width: 112px;
     height: 52px;
   }
+}
+
+.basket-modal__show {
+  display: block;
+}
+
+.basket-modal__hidden {
+  display: none;
 }
