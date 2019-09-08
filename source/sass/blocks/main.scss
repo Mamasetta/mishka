@@ -40,7 +40,8 @@
 
   .main__wrapper {
     background-color: #f9f9f9;
-    background-image: url("../img/hero-tablet@1x.jpg");background-position: center 0;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
